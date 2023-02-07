@@ -20,7 +20,6 @@ const opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = config.secretKey;
 
-// Export the JWT strategy
 exports.jwtPassport = passport.use(
     new JwtStrategy(
         opts,
