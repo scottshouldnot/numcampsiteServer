@@ -43,7 +43,7 @@ exports.verifyAdmin = (req, res, next) => {
     if (req.user.admin) {
         return next();
     } else {
-        const err = new Error("You are not allowed!");
+        const err = new Error("Nice try dude!");
         res.statusCode = 403;
         return next(err);
     }
